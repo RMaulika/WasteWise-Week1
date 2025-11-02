@@ -5,3 +5,15 @@ __pycache__/
 *.ckpt
 .ipynb_checkpoints/
 data/
+# Ignore dataset and output folders
+dataset/
+data/
+outputs/
+notebooks/
+
+# Ignore virtual environment
+.venv/
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
