@@ -44,3 +44,36 @@ Week 1 Summary:
 ✅ Dataset setup completed
 ✅ EDA and baseline model trained (MobileNetV2)
 ✅ Validation accuracy = 97.14%
+
+---
+
+## 🗓️ Week 2 – Fine-Tuning & Data Augmentation
+
+** Objective **
+Improve the baseline MobileNetV2 model’s performance by:
+- Fine-tuning deeper layers  
+- Applying image data augmentation  
+- Evaluating post-tuning accuracy and loss
+
+** Steps Performed **
+✅ Loaded preprocessed dataset from Week 1  
+✅ Implemented data augmentation using `ImageDataGenerator` (rotation, zoom, flips)  
+✅ Unfrozen top layers of MobileNetV2 and fine-tuned with a lower learning rate  
+✅ Trained the fine-tuned model for multiple epochs  
+✅ Evaluated and saved updated metrics and plots  
+
+** Command to Run **
+```bash
+python Week2/main.py
+Outputs
+Week2/outputs/fine_tuned_model.h5
+
+Week2/outputs/accuracy_plot_week2.png
+
+Week2/outputs/loss_plot_week2.png
+
+Week2/outputs/confusion_matrix_week2.png
+
+** Results **
+Validation accuracy (after fine-tuning): ≈ 98–99 %
+Noticeable reduction in validation loss and improved generalization
