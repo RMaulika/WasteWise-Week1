@@ -1,29 +1,35 @@
-# Virtual environment
+# Ignore Venv
 .venv/
 
-# Python cache files
-__pycache__/
-*.pyc
-
-# Large model checkpoints
-*.h5
-*.ckpt
-
-# Notebooks
-.ipynb_checkpoints/
-notebooks/
- 
-# Datasets and data (do not push large datasets)
+# Ignore datasets
 dataset/
 data/
 
-# Ignore outputs by default, but allow Week3 outputs explicitly
-outputs/
-Week1/outputs/
-Week2/outputs/
-!Week3/outputs/
-!Week3/outputs/**
+# Ignore model files
+*.h5
+*.tflite
+*.ckpt
 
-# Keep safe sample images (if you want them tracked)
-sample_images/
+# Ignore python cache
+__pycache__/
+*.pyc
+
+# Ignore temporary images
 Week3/temp.jpg
+
+# Ignore notebooks cache
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+
+# Project outputs
+outputs/
+sample_images/
+*.jpg
+*.png
+
+# Environments
+.env
+venv/
